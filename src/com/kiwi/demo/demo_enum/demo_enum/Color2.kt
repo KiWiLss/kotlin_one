@@ -17,6 +17,7 @@ enum class Color2(val r: Int,val g:Int,val b: Int) {//声明属性
     ,GREEN(0,255,0),BLUE(0,0,255),INDIGO(75,0,130)
     ,VIOLET(238,130,238);//必须要加分号
 
+
     //给枚举定义一个方法
     fun rgb() = (r*256 + g) *256 +b
 }
