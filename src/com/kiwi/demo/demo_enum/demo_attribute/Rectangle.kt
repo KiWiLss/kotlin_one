@@ -27,6 +27,7 @@ class Rectangle(val height: Int
 
 fun main(args: Array<String>) {
     val rectangle=Rectangle(10,10)
+
     println(rectangle.isSquare)
     val rect=createRendomREctangel();
     println("${rect.height},${rect.width}")

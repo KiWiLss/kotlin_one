@@ -25,7 +25,7 @@ fun getMnemonic(color: Color2)=
 
         }
 /**
- * 另外一种写法
+ * 另外一种写法,在一个when分支上合并多个选项
  */
 
 fun getMnemonic2(color: Color2) = when(color){
