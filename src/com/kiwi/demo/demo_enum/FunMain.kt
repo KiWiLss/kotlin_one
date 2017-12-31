@@ -33,9 +33,24 @@ fun max(a: Int,b: Int) : Int{//声明一个函数,写法一,如果函数写在�
 fun max1(a: Int,b: Int):Int = if (a<b) a else b//声明函数,方法二
 
 //进一步简化,省略返回值类型
-fun max2(a: Int,b: Int) = if (a < b) a else b
+fun max2(a: Int,b: Int) = if (a < b) a else b//相当于java里的三目运算符return a > b ? a : b
 
 fun max3(a: Int,b: Int) = a+b
+
+//没有返回值写法
+fun max4(a: Int,b: Int){
+    if (a > b){
+        println("a > b")
+    }else{
+        println("a < b")
+    }
+}
+
+fun max5(a: Int,b: Int) : Int =
+    if (a > b) a else b
+
+
+
 
 
 

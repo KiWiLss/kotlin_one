@@ -30,8 +30,20 @@ fun mix(c1:Color,c2:Color) =
 
 
 //不带参数的when
+fun mixOptimized(c1: Color,c2: Color) = when{
 
+    (c1==Color.RED&&c2==Color.YELLOW) -> "red yellow"
+
+    (c1==Color.RED&&c2==Color.ORANGE) -> "red orange"
+
+
+    else -> {
+        "nothing"
+    }
+}
 
 fun main(args: Array<String>) {
     println(mix(Color.RED,Color.BLUE))
+
+    println(mixOptimized(Color.RED,Color.YELLOW))
 }
